@@ -1,0 +1,17 @@
+{
+  "name": "던전 증권",
+  "short_name": "던전 증권",
+  "description": "헌터 길드 주식과 마정석을 사고팔고 레이드에 투자하는 현대 판타지 투자 게임",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#101218",
+  "theme_color": "#101218",
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>던전 증권</title>
+<meta name="description" content="게이트가 열린 세상, 헌터 길드 주식과 마정석을 사고팔고 레이드 공략대에 투자해 계좌를 불리는 현대 판타지 투자 게임">
+<meta name="theme-color" content="#101218">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&family=JetBrains+Mono:wght@500;700&display=swap">
+  <script type="module" crossorigin src="./assets/index-B8Lrnhd_.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-D_9d3TYh.css">
+</head>
+<body data-mtab="today">
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>던전 증권</h1>
+      <p id="subtitle">현대 판타지 투자 게임</p>
+    </div>
+    <div class="days" id="days"></div>
+    <div class="purse">
+      <div><span>현금</span><span class="num" id="cash">5,000</span></div>
+      <div><span>총자산</span><span class="num" id="equity">5,000</span></div>
+      <div><span>수익률</span><span class="num" id="ret">+0.0%</span></div>
+      <div><span>레버리지</span><span class="num" id="lev">0.0배</span><span class="lev-note" id="lev-note">포지션 없음</span></div>
+    </div>
+  </header>
+
+  <div class="grid">
+    <div class="col left">
+      <section class="panel m-pane" id="sec-watch" aria-labelledby="w-h">
+        <div class="panel-head"><h2 id="w-h">종목</h2><span>전일 종가 대비</span></div>
+        <div class="watch" id="watch"></div>
+      </section>
+      <section class="panel m-pane" id="sec-pos" aria-labelledby="p-h">
+        <div class="panel-head"><h2 id="p-h">보유 현황</h2><span>시장 계좌</span></div>
+        <div class="positions" id="positions"></div>
+      </section>
+    </div>
+
+    <section class="panel stage m-pane" id="stage" aria-live="polite"></section>
+
+    <div class="col right">
+      <section class="panel m-pane" id="sec-exp" aria-labelledby="e-h">
+        <div class="panel-head"><h2 id="e-h">레이드 현황</h2><span id="e-sub">투자한 공략대만 현장 리포트를 보낸다</span></div>
+        <div class="exp" id="exp"></div>
+      </section>
+      <section class="panel m-pane" id="sec-feed" aria-labelledby="f-h">
+        <div class="panel-head"><h2 id="f-h">소식</h2><span>최신순</span></div>
+        <ul class="feed" id="feed"></ul>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+<nav class="mnav" id="mnav" aria-label="화면 전환">
+  <button type="button" data-mtab="today" aria-current="page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"></path></svg><span id="mt-today">오늘</span></button>
+  <button type="button" data-mtab="exp"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 20l5-14 3 7 3-4 5 11z"></path></svg><span>레이드</span><i class="badge" id="bd-exp" hidden></i></button>
+  <button type="button" data-mtab="watch"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="3 17 9 11 13 15 21 7"></polyline><polyline points="15 7 21 7 21 13"></polyline></svg><span>종목</span></button>
+  <button type="button" data-mtab="feed"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="8" y1="9" x2="16" y2="9"></line><line x1="8" y1="13" x2="16" y2="13"></line></svg><span>소식</span><i class="badge" id="bd-feed" hidden></i></button>
+</nav>
+<div class="title-screen" id="title" hidden></div>
+</body>
+</html>
