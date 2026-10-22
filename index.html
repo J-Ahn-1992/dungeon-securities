@@ -13,8 +13,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&family=JetBrains+Mono:wght@500;700&display=swap">
-  <script type="module" crossorigin src="./assets/index-B8Lrnhd_.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-D_9d3TYh.css">
+  <script type="module" crossorigin src="./assets/index-BmRi4DLg.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DYDKQIoS.css">
 </head>
 <body data-mtab="today">
 <div class="wrap">
@@ -36,17 +36,19 @@
     <div class="col left">
       <section class="panel m-pane" id="sec-watch" aria-labelledby="w-h">
         <div class="panel-head"><h2 id="w-h">종목</h2><span>전일 종가 대비</span></div>
+        <div class="cat-tabs" id="wcats" role="tablist" aria-label="종목 분류"></div>
         <div class="watch" id="watch"></div>
-      </section>
-      <section class="panel m-pane" id="sec-pos" aria-labelledby="p-h">
-        <div class="panel-head"><h2 id="p-h">보유 현황</h2><span>시장 계좌</span></div>
-        <div class="positions" id="positions"></div>
       </section>
     </div>
 
     <section class="panel stage m-pane" id="stage" aria-live="polite"></section>
 
     <div class="col right">
+      <section class="panel m-pane pos-panel" id="sec-pos" aria-labelledby="p-h">
+        <div class="panel-head"><h2 id="p-h">보유 현황</h2><span id="pos-total"></span></div>
+        <div class="pos-sum" id="pos-sum"></div>
+        <div class="positions" id="positions"></div>
+      </section>
       <section class="panel m-pane" id="sec-exp" aria-labelledby="e-h">
         <div class="panel-head"><h2 id="e-h">레이드 현황</h2><span id="e-sub">투자한 공략대만 현장 리포트를 보낸다</span></div>
         <div class="exp" id="exp"></div>
